@@ -12,8 +12,93 @@ background-repeat: no-repeat;
 
 header {
     width: 100%;
-    height: 20%;
+    height: 30%;
   position: relative;
    top:5px;
+    display: flex;
+    align-items: center;   /* Centra verticalmente */
+    justify-content: flex-start; /* Logo + texto a la izquierda */
+
+    border-bottom: black solid 1px;
+    align-content: center;
+
 }
 
+#LogoPyp{
+
+    max-width: 5%; /* Escala el logo */
+    height: auto;
+    margin-right: 10px;
+    margin-left:5px;
+}
+#Pyp{
+    font-size: 1.2rem;
+    margin: 0;
+}
+#Titulo{
+    margin-top: 1%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.LibrosBox {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: row;
+}
+
+.Libro {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.PortadaDeLibro {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+
+/* === Nombre del cuento (arriba de la imagen) === */
+.NombreCuento {
+    position: absolute;
+    top: 0;  /* parte superior */
+    left: 0;
+    right: 0;
+    background: rgba(209, 104, 104, 0.6);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* === Descripción (abajo de la imagen) === */
+.Descripcion {
+    position: absolute;
+    bottom: 0;  /* parte inferior */
+    left: 0;
+    right: 0;
+    background: rgba(221, 137, 137, 0.6);
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    padding: 8px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Mostrar ambos al hacer hover */
+.Libro:hover .NombreCuento,
+.Libro:hover .Descripcion {
+    opacity: 1;
+}
