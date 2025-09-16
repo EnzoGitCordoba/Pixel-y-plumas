@@ -40,7 +40,17 @@ header {
     text-align: center;
     font-size: 1.5rem;
 }
-
+h2{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Merriweather', sans-serif; /* tipografía más estética */
+    color: #1c252e;                /* tono gris-azulado elegante */
+    letter-spacing: 2px;           /* separa un poco las letras */
+    /*text-transform: uppercase;      pone todo en mayúsculas */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* sombra suave */
+    border-bottom: 3px solid #3498db; /* línea decorativa debajo */
+    display: inline-block;         /* la línea se ajusta al texto */
+}
 
 .LibrosBox {
     display: grid;
