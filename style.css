@@ -40,6 +40,19 @@ header {
     text-align: center;
     font-size: 1.5rem;
 }
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Merriweather', sans-serif; /* tipografía más estética */
+    color: #1c252e;                /* tono gris-azulado elegante */
+    letter-spacing: 2px;           /* separa un poco las letras */
+    /*text-transform: uppercase;      pone todo en mayúsculas */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* sombra suave */
+    /* border-bottom: 3px solid #3498db; /* línea decorativa debajo */
+    display: inline-block;         /* la línea se ajusta al texto */
+}
+
 h2{
     text-align: center;
     font-size: 1.2rem;
@@ -112,3 +125,44 @@ h2{
 .Libro:hover .Descripcion {
     opacity: 1;
 }
+
+
+.TituloLibroEP {
+    position: relative;
+    color: rgba(0, 0, 0, 0.9);
+    text-shadow: 2px 2px 5px rgb(24, 243, 243);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+#bodyBN {
+    background-image: url(imagenes/FondoBN.png);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+
+.textoGeneral {
+    background-color: rgba(221, 241, 237, 0.3);
+    color: rgba(0, 0, 0);
+
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto; /* centrado con espacio */
+    text-align: justify;
+    font-size: 25px; /* 🔎 tamaño grande */
+    line-height: 1.3; /* mejor legibilidad */
+    font-family:    "Poppins", sans-serif;
+}
+
+
