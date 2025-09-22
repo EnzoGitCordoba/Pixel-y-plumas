@@ -130,7 +130,8 @@ h2{
 .TituloLibroEP {
     position: relative;
     color: rgba(0, 0, 0, 0.9);
-    text-shadow: 2px 2px 5px rgb(24, 243, 243);
+    background-color: rgba(235, 252, 1, 0.5);
+    
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -152,8 +153,73 @@ h2{
     align-items: center;          /* centra horizontal */
 }
 
+#bodyCP {
+    background-image: url(imagenes/FondoCP.png);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+
+#bodyCN {
+    background-image: url(imagenes/FondoCN.png);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+
+#bodyGB {
+    background-image: url(imagenes/FondoGB.png);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+
+#bodyPF {
+    background-image: url(imagenes/FondoPF.png);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+
+#bodyBD {
+    background-image: url(imagenes/FondoBD.png);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+
 .textoGeneral {
-    background-color: rgba(221, 241, 237, 0.3);
+    background-color: rgba(221, 241, 237, 0.6);
     color: rgba(0, 0, 0);
 
     padding: 20px;
