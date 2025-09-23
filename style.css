@@ -129,9 +129,11 @@ h2{
 
 .TituloLibroEP {
     position: relative;
-    color: rgba(0, 0, 0, 0.9);
-    background-color: rgba(235, 252, 1, 0.5);
-    
+    background: rgba(95, 198, 179, 0.8);
+    padding: 4px 16px;
+
+    color: #052026;
+    border-radius: 15px;
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -140,8 +142,18 @@ h2{
 
 }
 
+.audios {
+    gap: 12px;
+    background: #5fc6b3;
+    color: #052026;
+    padding: 10px 18px;
+    border-radius: 999px;
+    box-shadow: 0 3px 8px rgba(3, 30, 30, 0.08);
+}
+
+
 #bodyBN {
-    background-image: url(imagenes/FondoBN.png);
+    background-image: url(imagenes/fBN.jpg);
     min-height: 100vh;           /* ocupa al menos toda la pantalla */
     background-size: cover;      /* la imagen cubre todo el fondo */
     background-repeat: no-repeat;
@@ -154,7 +166,7 @@ h2{
 }
 
 #bodyCP {
-    background-image: url(imagenes/FondoCP.png);
+    background-image: url(imagenes/FCR.jpg);
     min-height: 100vh;           /* ocupa al menos toda la pantalla */
     background-size: cover;      /* la imagen cubre todo el fondo */
     background-repeat: no-repeat;
@@ -167,7 +179,7 @@ h2{
 }
 
 #bodyCN {
-    background-image: url(imagenes/FondoCN.png);
+    background-image: url(imagenes/FC.jpg);
     min-height: 100vh;           /* ocupa al menos toda la pantalla */
     background-size: cover;      /* la imagen cubre todo el fondo */
     background-repeat: no-repeat;
@@ -218,8 +230,168 @@ h2{
     align-items: center;          /* centra horizontal */
 }
 
+#bodyL3C {
+    background-image: url(imagenes/FL3C.JPG);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+#bodyHYG {
+    background-image: url(imagenes/FHYG.JPG);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+#bodyR {
+    background-image: url(imagenes/FR.JPG);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+#bodyLS {
+    background-image: url(imagenes/FLS.JPG);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+
+#bodyLPYEG {
+    background-image: url(imagenes/FLPYE.jpg);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+#bodyEFDH {
+    background-image: url(imagenes/FEFDH.jpg);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+#bodyLCYLH {
+    background-image: url(imagenes/FLCYLH.jpg);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+#bodyA {
+    background-image: url(imagenes/FA.jpg);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+#bodyA {
+    background-image: url(imagenes/FA.jpg);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+
+#bodyLBYLB {
+    background-image: url(imagenes/FLBYLB.jpg);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+
+#bodyELDLS{
+    background-image: url(imagenes/FELDLS.jpg);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
+#bodyPP{
+     background-image: url(imagenes/FPP.jpg);
+     min-height: 100vh;           /* ocupa al menos toda la pantalla */
+     background-size: cover;      /* la imagen cubre todo el fondo */
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+     margin: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;          /* centra horizontal */
+ }
+#bodyECN{
+    background-image: url(imagenes/FECN.jpg);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
+}
 .textoGeneral {
     background-color: rgba(221, 241, 237, 0.6);
+
     color: rgba(0, 0, 0);
 
     padding: 20px;
