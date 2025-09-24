@@ -13,32 +13,77 @@ background-repeat: no-repeat;
 header {
     width: 100%;
     height: 30%;
-  position: relative;
-   top:5px;
-    display: flex;
-    align-items: center;   /* Centra verticalmente */
-    justify-content: flex-start; /* Logo + texto a la izquierda */
-
+    position: sticky;
+    top: 5px;
     border-bottom: black solid 1px;
-    align-content: center;
+    display: flex;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
 
 }
 
-#LogoPyp{
+.headerEnCuento {
+    outline: 3px solid rgba(95, 198, 179, 0.08);
+    position: sticky;
+    width: 100%;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: space-between; /* icono a la izquierda, botón a la derecha */
+    align-items: center; /* centra verticalmente */
+    /*background-color: rgba(128, 128, 128, 0.6); !* gris con transparencia *!*/
+    background: rgba(95, 198, 179, 0.8);
+    padding:0;
+    margin: 0;
+    z-index: 10; /* que quede por encima del fondo */
+}
 
+
+
+
+.BotonInicio {
+    background-color: rgba(221, 241, 237, 0.6);
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.BotonInicio:hover {
+    background-color: rgba(221, 241, 237, 0.9);
+}
+
+
+.LogoConNombre{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+#LogoPyp{
     max-width: 5%; /* Escala el logo */
     height: auto;
     margin-right: 10px;
     margin-left:5px;
+
 }
 #Pyp{
     font-size: 1.2rem;
     margin: 0;
 }
+#Eslogan {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.4rem;
+}
 #Titulo{
     margin-top: 1%;
     text-align: center;
     font-size: 1.5rem;
+    width: 100%; /* ocupa todo el ancho */
 }
 
 h1{
@@ -327,18 +372,7 @@ h2{
     flex-direction: column;
     align-items: center;          /* centra horizontal */
 }
-#bodyA {
-    background-image: url(imagenes/FA.jpg);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
+
 
 #bodyLBYLB {
     background-image: url(imagenes/FLBYLB.jpg);
@@ -402,5 +436,17 @@ h2{
     line-height: 1.3; /* mejor legibilidad */
     font-family:    "Poppins", sans-serif;
 }
+#bodyA {
+    background-image: url(imagenes/FA.jpg);
+    min-height: 100vh;           /* ocupa al menos toda la pantalla */
+    background-size: cover;      /* la imagen cubre todo el fondo */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
+    padding:0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centra horizontal */
 
-
+}
