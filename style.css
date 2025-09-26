@@ -1,26 +1,18 @@
 body {
-
     justify-content: center; /* Centra horizontalmente */
-    margin-top: 50px;
-    background-image: url(imagenes/FondoPpalamp.jpg) ;
+
+    /*background-image: url(imagenes/FondoPPal.jpg) ;*/
+    background-image: radial-gradient( rgba(0, 100, 0, 0.6),  rgba(95, 198, 179, 0.8)  );
     height: auto;
-
 background-size: cover;
-background-repeat: no-repeat;
+/*background-repeat: no-repeat;*/
     margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-header {
-    width: 100%;
-    height: 30%;
-    position: sticky;
-    top: 5px;
-    border-bottom: black solid 1px;
-    display: flex;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-
-}
 
 .headerEnCuento {
     outline: 3px solid rgba(95, 198, 179, 0.08);
@@ -30,13 +22,17 @@ header {
     display: flex;
     justify-content: space-between; /* icono a la izquierda, botón a la derecha */
     align-items: center; /* centra verticalmente */
-    /*background-color: rgba(128, 128, 128, 0.6); !* gris con transparencia *!*/
     background: rgba(95, 198, 179, 0.8);
     padding:0;
     margin: 0;
     z-index: 10; /* que quede por encima del fondo */
+    border-bottom: 3px solid black;
 }
 
+.CategoriasBox{
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 
 
@@ -58,15 +54,12 @@ header {
 .LogoConNombre{
     display: flex;
     align-items: center;
-    gap: 8px;
-
 }
 #LogoPyp{
     max-width: 5%; /* Escala el logo */
     height: auto;
     margin-right: 10px;
     margin-left:5px;
-
 }
 #Pyp{
     font-size: 1.2rem;
@@ -79,6 +72,7 @@ header {
     text-align: center;
     font-size: 1.4rem;
 }
+
 #Titulo{
     margin-top: 1%;
     text-align: center;
@@ -118,12 +112,14 @@ h2{
     justify-content: center;
     align-items: center;
     grid-auto-flow: row;
+    border-radius: 10px;
 }
 
 .Libro {
     position: relative;
     display: inline-block;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .PortadaDeLibro {
@@ -134,7 +130,6 @@ h2{
 }
 
 
-/* === Nombre del cuento (arriba de la imagen) === */
 .NombreCuento {
     position: absolute;
     top: 0;  /* parte superior */
@@ -197,237 +192,9 @@ h2{
 }
 
 
-#bodyBN {
-    background-image: url(imagenes/fBN.jpg);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-
-#bodyCP {
-    background-image: url(imagenes/FCR.jpg);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-
-#bodyCN {
-    background-image: url(imagenes/FC.jpg);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-
-#bodyGB {
-    background-image: url(imagenes/FondoGB.png);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-
-#bodyPF {
-    background-image: url(imagenes/FondoPF.png);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-
-#bodyBD {
-    background-image: url(imagenes/FondoBD.png);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-
-#bodyL3C {
-    background-image: url(imagenes/FL3C.JPG);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-#bodyHYG {
-    background-image: url(imagenes/FHYG.JPG);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-#bodyR {
-    background-image: url(imagenes/FR.JPG);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-#bodyLS {
-    background-image: url(imagenes/FLS.JPG);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-
-#bodyLPYEG {
-    background-image: url(imagenes/FLPYE.jpg);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-#bodyEFDH {
-    background-image: url(imagenes/FEFDH.jpg);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-#bodyLCYLH {
-    background-image: url(imagenes/FLCYLH.jpg);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-#bodyA {
-    background-image: url(imagenes/FA.jpg);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-
-
-#bodyLBYLB {
-    background-image: url(imagenes/FLBYLB.jpg);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-
-#bodyELDLS{
-    background-image: url(imagenes/FELDLS.jpg);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-#bodyPP{
-     background-image: url(imagenes/FPP.jpg);
-     min-height: 100vh;           /* ocupa al menos toda la pantalla */
-     background-size: cover;      /* la imagen cubre todo el fondo */
-     background-repeat: no-repeat;
-     background-position: center;
-     background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-     margin: 0;
-     display: flex;
-     flex-direction: column;
-     align-items: center;          /* centra horizontal */
- }
-#bodyECN{
-    background-image: url(imagenes/FECN.jpg);
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
 .textoGeneral {
-    background-color: rgba(221, 241, 237, 0.6);
-
+    background-color: rgba(221, 241, 237, 0.8);
     color: rgba(0, 0, 0);
-
     padding: 20px;
     max-width: 800px;
     margin: 20px auto; /* centrado con espacio */
@@ -436,8 +203,8 @@ h2{
     line-height: 1.3; /* mejor legibilidad */
     font-family:    "Poppins", sans-serif;
 }
-#bodyA {
-    background-image: url(imagenes/FA.jpg);
+
+.bodyGeneral{
     min-height: 100vh;           /* ocupa al menos toda la pantalla */
     background-size: cover;      /* la imagen cubre todo el fondo */
     background-repeat: no-repeat;
@@ -448,5 +215,72 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;          /* centra horizontal */
+}
+#bodyA {
+    background-image: url(imagenes/FA.jpg);
+}
 
+
+#bodyBN {
+    background-image: url(imagenes/fBN.jpg);
+}
+
+#bodyCP {
+    background-image: url(imagenes/FCR.jpg);
+}
+
+#bodyCN {
+    background-image: url(imagenes/FC.jpg);
+}
+
+#bodyGB {
+    background-image: url(imagenes/FondoGB.png);
+}
+
+#bodyPF {
+    background-image: url(imagenes/FondoPF.png);
+}
+
+#bodyBD {
+    background-image: url(imagenes/FondoBD.png);
+}
+
+#bodyL3C {
+    background-image: url(imagenes/FL3C.JPG);
+}
+#bodyHYG {
+    background-image: url(imagenes/FHYG.JPG);
+}
+#bodyR {
+    background-image: url(imagenes/FR.JPG);
+}
+#bodyLS {
+    background-image: url(imagenes/FLS.JPG);
+}
+
+#bodyLPYEG {
+    background-image: url(imagenes/FLPYE.jpg);
+}
+#bodyEFDH {
+    background-image: url(imagenes/FEFDH.jpg);
+}
+#bodyLCYLH {
+    background-image: url(imagenes/FLCYLH.jpg);
+}
+#bodyA {
+    background-image: url(imagenes/FA.jpg);
+}
+
+#bodyLBYLB {
+    background-image: url(imagenes/FLBYLB.jpg);
+}
+
+#bodyELDLS{
+    background-image: url(imagenes/FELDLS.jpg);
+}
+#bodyPP{
+    background-image: url(imagenes/FPP.jpg);
+}
+#bodyECN{
+    background-image: url(imagenes/FECN.jpg);
 }
