@@ -133,7 +133,7 @@ h2{
     grid-column-start: 4;
     grid-column-end:6;
     position: relative;
-    height: 270px;
+    height: 18vw;
     display: inline-block;
     overflow: hidden;
     border-radius: 10px;
