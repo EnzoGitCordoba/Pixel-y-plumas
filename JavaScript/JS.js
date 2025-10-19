@@ -1103,26 +1103,51 @@ function mostrarCuento(index) {
     const cuento = cuentos[index];
     const contenedor = document.getElementById("cuentos");
 
-    // Cambiamos el modo del contenedor (ya no es grid)
     contenedor.style.display = "flex";
     contenedor.style.flexDirection = "column";
     contenedor.style.alignItems = "center";
 
-    // Armamos el contenido del cuento
-
+    // Agregamos los controles arriba del texto
     contenedor.innerHTML = `
     <div class="bodyEnCuentos" id="bodyEnCuentos">
         <h1 class="TituloLibroEP">${cuento.nombre}</h1>
         <audio class="audios" src="${cuento.audioDelCuento}" controls></audio>
+
+        <!-- 🔹 Controles de lectura -->
+        <div class="ControlesLectura">
+            <button id="btnAumentar">A+</button>
+            <button id="btnReducir">A-</button>
+            <input id="rangoOpacidad" type="range" min="0.3" max="1" step="0.1" value="0.8" title="Opacidad del fondo">
+        </div>
+
         <p class="textoGeneral">${cuento.textoDelCuento}</p>
     </div>
-`;
+    `;
 
+    // Fondo del cuento
     const bodyEnCuentos = document.getElementById("bodyEnCuentos");
     bodyEnCuentos.style.backgroundImage = `url("${cuento.imagenDelcuento}")`;
 
-}
+    // 🔹 Funcionalidad de los botones
+    const texto = document.querySelector(".textoGeneral");
+    const btnAumentar = document.getElementById("btnAumentar");
+    const btnReducir = document.getElementById("btnReducir");
+    const rangoOpacidad = document.getElementById("rangoOpacidad");
 
+    let tamañoActual = 25; // valor inicial igual al CSS
+    btnAumentar.onclick = () => {
+        tamañoActual += 2;
+        texto.style.fontSize = `${tamañoActual}px`;
+    };
+    btnReducir.onclick = () => {
+        tamañoActual = Math.max(14, tamañoActual - 2);
+        texto.style.fontSize = `${tamañoActual}px`;
+    };
+
+    rangoOpacidad.oninput = () => {
+        texto.style.backgroundColor = `rgba(221, 241, 237, ${rangoOpacidad.value})`;
+    };
+}
 
 // Asegurarse que se ejecute al cargar la página
 window.onload = agregarLibro;

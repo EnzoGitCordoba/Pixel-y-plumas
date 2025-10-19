@@ -222,7 +222,7 @@ h2{
     background-color: rgba(221, 241, 237, 0.8);
     color: rgba(0, 0, 0);
     padding: 20px;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 20px auto; /* centrado con espacio */
     text-align: justify;
     font-size: 25px; /* 🔎 tamaño grande */
@@ -230,23 +230,52 @@ h2{
     font-family:    "Poppins", sans-serif;
 }
 
-.bodyEnCuentos{
-
-    min-height: 50vh;
+.bodyEnCuentos {
     width: 100%;
+    min-height: 100vh;
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; /* 🔹 Mantiene el fondo fijo */
+    background-color: #d8f4f0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-}
 
+}
 #footerEnPPL{
     text-align: center;
     color: white;
     font-size: 1rem;
     font-family: 'Merriweather', sans-serif; /* tipografía más estética */
+}
+
+
+.ControlesLectura {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 6px 12px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.ControlesLectura button {
+    background-color: rgba(95, 198, 179, 0.8);
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ControlesLectura button:hover {
+    background-color: rgba(95, 198, 179, 1);
+}
+
+.ControlesLectura input[type="range"] {
+    cursor: pointer;
 }
