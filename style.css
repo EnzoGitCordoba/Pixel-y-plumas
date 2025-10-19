@@ -2,7 +2,8 @@ body {
     justify-content: center; /* Centra horizontalmente */
 
 
-        background-image: radial-gradient( rgba(0, 100, 0, 0.6),  rgba(95, 198, 179, 0.8)  );
+    background-image: radial-gradient( rgba(0, 100, 0, 0.6),  rgba(95, 198, 179, 0.8)  );
+
     height: auto;
 background-size: cover;
 /*background-repeat: no-repeat;*/
@@ -20,12 +21,12 @@ background-size: cover;
     width: 100%;
     top: 0; left: 0; right: 0;
     display: flex;
-    justify-content: space-between; /* icono a la izquierda, botón a la derecha */
-    align-items: center; /* centra verticalmente */
+    justify-content: space-between;
+    align-items: center;
     background: rgba(95, 198, 179, 0.8);
-    padding:0;
+    padding: 0;
     margin: 0;
-    z-index: 10; /* que quede por encima del fondo */
+    z-index: 10;
     border-bottom: 3px solid black;
 }
 
@@ -52,15 +53,22 @@ background-size: cover;
 
 
 .LogoConNombre{
-    display: flex;
+    display: inline-flex;           /* En lugar de flex para limitar el ancho al contenido */
     align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0 8px;                 /* opcional: pequeño margen interno */
 }
-#LogoPyp{
-    max-width: 5%; /* Escala el logo */
+
+
+#LogoPyp {
+    width: 90px;           /* más controlado que max-width: 5% */
     height: auto;
     margin-right: 10px;
-    margin-left:5px;
+    margin-left: 5px;
 }
+
 #Pyp{
     font-size: 1.2rem;
     margin: 0;
@@ -121,6 +129,7 @@ h2{
     margin-left: 3%;
     margin-right: 3%;
     border-radius: 15px;
+    margin-top:10px;
 }
 
 .Libro {
@@ -221,85 +230,18 @@ h2{
     font-family:    "Poppins", sans-serif;
 }
 
-.bodyGeneral{
-    min-height: 100vh;           /* ocupa al menos toda la pantalla */
-    background-size: cover;      /* la imagen cubre todo el fondo */
+.bodyEnCuentos{
+
+    min-height: 50vh;
+    width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed; /* 🔑 mantiene el fondo fijo */
-    padding:0;
-    margin: 0;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    align-items: center;          /* centra horizontal */
-}
-#bodyA {
-    background-image: url(imagenes/FA.jpg);
-}
-
-
-#bodyBN {
-    background-image: url(imagenes/fBN.jpg);
-}
-
-#bodyCP {
-    background-image: url(imagenes/FCR.jpg);
-}
-
-#bodyCN {
-    background-image: url(imagenes/FC.jpg);
-}
-
-#bodyGB {
-    background-image: url(imagenes/FondoGB.png);
-}
-
-#bodyPF {
-    background-image: url(imagenes/FondoPF.png);
-}
-
-#bodyBD {
-    background-image: url(imagenes/FondoBD.png);
-}
-
-#bodyL3C {
-    background-image: url(imagenes/FL3C.JPG);
-}
-#bodyHYG {
-    background-image: url(imagenes/FHYG.JPG);
-}
-#bodyR {
-    background-image: url(imagenes/FR.JPG);
-}
-#bodyLS {
-    background-image: url(imagenes/FLS.JPG);
-}
-
-#bodyLPYEG {
-    background-image: url(imagenes/FLPYE.jpg);
-}
-#bodyEFDH {
-    background-image: url(imagenes/FEFDH.jpg);
-}
-#bodyLCYLH {
-    background-image: url(imagenes/FLCYLH.jpg);
-}
-#bodyA {
-    background-image: url(imagenes/FA.jpg);
-}
-
-#bodyLBYLB {
-    background-image: url(imagenes/FLBYLB.jpg);
-}
-
-#bodyELDLS{
-    background-image: url(imagenes/FELDLS.jpg);
-}
-#bodyPP{
-    background-image: url(imagenes/FPP.jpg);
-}
-#bodyECN{
-    background-image: url(imagenes/FECN.jpg);
+    align-items: center;
+    justify-content: flex-start;
 }
 
 #footerEnPPL{
