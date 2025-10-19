@@ -1183,6 +1183,20 @@ function mostrarFormulario() {
     };
 }
 
+    let tamañoActual = 25; // valor inicial igual al CSS
+    btnAumentar.onclick = () => {
+        tamañoActual += 2;
+        texto.style.fontSize = `${tamañoActual}px`;
+    };
+    btnReducir.onclick = () => {
+        tamañoActual = Math.max(14, tamañoActual - 2);
+        texto.style.fontSize = `${tamañoActual}px`;
+    };
+
+    rangoOpacidad.oninput = () => {
+        texto.style.backgroundColor = `rgba(221, 241, 237, ${rangoOpacidad.value})`;
+    };
+
 
 
 function abrirRegistro(){
