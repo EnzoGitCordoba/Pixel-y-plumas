@@ -1112,7 +1112,6 @@ function mostrarCuento(index) {
 
     contenedor.innerHTML = `
     <div class="bodyEnCuentos" id="bodyEnCuentos">
-        <button onclick="volver()">⬅ Volver</button>
         <h1 class="TituloLibroEP">${cuento.nombre}</h1>
         <audio class="audios" src="${cuento.audioDelCuento}" controls></audio>
         <p class="textoGeneral">${cuento.textoDelCuento}</p>
@@ -1123,21 +1122,7 @@ function mostrarCuento(index) {
     bodyEnCuentos.style.backgroundImage = `url("${cuento.imagenDelcuento}")`;
 
 }
-function volver() {
-    const cont = document.getElementById("cuentos");
-    const body = document.body;
 
-    // Restaurar la visualización original
-    cont.style.display = "grid";
-    cont.style.flexDirection = "";
-    cont.style.alignItems = "";
-
-    // Restaurar el fondo de la página principal
-    body.style.backgroundImage = "radial-gradient(rgba(0, 100, 0, 0.6), rgba(95, 198, 179, 0.8))";
-
-    // Volver a mostrar los libros
-    agregarLibro();
-}
 
 // Asegurarse que se ejecute al cargar la página
 window.onload = agregarLibro;
