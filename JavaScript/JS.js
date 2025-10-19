@@ -1083,10 +1083,10 @@ const cuentos = [
 `, audioDelCuento:"Audios/AECN.mp3"}
 ];
 
-// 2) Funciones conservando tu estructura y llamando por índice para evitar problemas de comillas
+
 function agregarLibro(){
     const cont = document.getElementById("cuentos");
-    cont.innerHTML = ""; // limpiar antes
+    cont.innerHTML = "";
 
     for(let i = 0; i < cuentos.length; i++){
         cont.innerHTML += `
@@ -1097,37 +1097,122 @@ function agregarLibro(){
       </div>
     `;
     }
+    cont.innerHTML += `
+  <div class="Libro" id="recomendarCuento">
+    <img class="PortadaDeLibro" src="imagenes/cuentosEnPaginaPPAL/proximamente.jpg" >
+    <span class="NombreCuento">¡Recomienda un cuento!</span>
+    <span class="Descripcion">Haz clic aquí para enviarnos tu historia favorita</span>
+  </div>
+`;
+    document.getElementById("recomendarCuento").onclick = mostrarFormulario;
 }
 
 function mostrarCuento(index) {
     const cuento = cuentos[index];
     const contenedor = document.getElementById("cuentos");
 
-    // Cambiamos el modo del contenedor (ya no es grid)
     contenedor.style.display = "flex";
     contenedor.style.flexDirection = "column";
     contenedor.style.alignItems = "center";
 
-    // Armamos el contenido del cuento
-
+    // Agregamos los controles arriba del texto
     contenedor.innerHTML = `
     <div class="bodyEnCuentos" id="bodyEnCuentos">
         <h1 class="TituloLibroEP">${cuento.nombre}</h1>
         <audio class="audios" src="${cuento.audioDelCuento}" controls></audio>
+
+        <!-- 🔹 Controles de lectura -->
+        <div class="ControlesLectura">
+            <button id="btnAumentar">A+</button>
+            <button id="btnReducir">A-</button>
+            <input id="rangoOpacidad" type="range" min="0.3" max="1" step="0.1" value="0.8" title="Opacidad del fondo">
+        </div>
+
         <p class="textoGeneral">${cuento.textoDelCuento}</p>
     </div>
-`;
+    `;
 
+    
     const bodyEnCuentos = document.getElementById("bodyEnCuentos");
     bodyEnCuentos.style.backgroundImage = `url("${cuento.imagenDelcuento}")`;
 
+    
+    const texto = document.querySelector(".textoGeneral");
+    const btnAumentar = document.getElementById("btnAumentar");
+    const btnReducir = document.getElementById("btnReducir");
+    const rangoOpacidad = document.getElementById("rangoOpacidad");
+
+    let tamañoActual = 25;
+    btnAumentar.onclick = () => {
+        tamañoActual += 2;
+        texto.style.fontSize = `${tamañoActual}px`;
+    };
+    btnReducir.onclick = () => {
+        tamañoActual = Math.max(14, tamañoActual - 2);
+        texto.style.fontSize = `${tamañoActual}px`;
+    };
+
+    rangoOpacidad.oninput = () => {
+        texto.style.backgroundColor = `rgba(221, 241, 237, ${rangoOpacidad.value})`;
+    };
+}
+
+function mostrarFormulario() {
+    const modal = document.createElement("div");
+    modal.id = "modalFormulario";
+    modal.innerHTML = `
+        <div class="modal-fondo">
+            <div class="modal-caja">
+                <h2>Recomienda un cuento</h2>
+                <p>Nos encantaría saber qué cuento te gustaría ver aca 😊</p>
+                <form id="formCuento">
+                    <input type="text" id="titulo" placeholder="Título del cuento" required>
+                    <textarea id="descripcion" placeholder="¿Por qué te gusta este cuento?" required></textarea>
+                    <button type="submit">Enviar</button>
+                    <button type="button" id="cerrarModal">Cancelar</button>
+                </form>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    document.getElementById("cerrarModal").onclick = () => modal.remove();
+    document.getElementById("formCuento").onsubmit = (e) => {
+        e.preventDefault();
+        alert("¡Gracias por tu recomendación!");
+        modal.remove();
+    };
 }
 
 
-// Asegurarse que se ejecute al cargar la página
+
+function abrirRegistro(){
+    
+    const modal = document.createElement("div");
+    modal.id = "modalFormulario";
+    modal.innerHTML = `
+        <div class="modal-fondo">
+            <div class="modal-caja">
+                <h2>Registrarse</h2>
+                <form id="formCuento">
+                    <input type="email" id="email" placeholder="Ingresa tu correo" required>
+                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                    <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+                    
+                    <button type="submit">Enviar</button>
+                    <button type="button" id="cerrarModal">Cancelar</button>
+                </form>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(modal);
+    document.getElementById("cerrarModal").onclick = () => modal.remove();
+    document.getElementById("formCuento").onsubmit = (e) => {
+        e.preventDefault();
+        alert("¡Gracias por registrarse!");
+        modal.remove();
+    };
+}
 window.onload = agregarLibro;
-
-
 
 
 
