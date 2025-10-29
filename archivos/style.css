@@ -1,0 +1,339 @@
+body {
+    justify-content: center; /* Centra horizontalmente */
+
+
+    background-image: radial-gradient( rgba(0, 100, 0, 0.6),  rgba(95, 198, 179, 0.8)  );
+
+    height: auto;
+background-size: cover;
+/*background-repeat: no-repeat;*/
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.headerEnCuento {
+    outline: 3px solid rgba(95, 198, 179, 0.08);
+    position: sticky;
+    width: 100%;
+    top: 0; left: 0; right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(95, 198, 179, 0.8);
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+    border-bottom: 3px solid black;
+}
+
+.CategoriasBox{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+.LogoConNombre{
+    display: inline-flex;           /* En lugar de flex para limitar el ancho al contenido */
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0 8px;                 /* opcional: pequeño margen interno */
+}
+
+
+#LogoPyp {
+    width: 90px;           /* más controlado que max-width: 5% */
+    height: auto;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#Pyp{
+    font-size: 1.2rem;
+    margin: 0;
+}
+#Eslogan {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#Titulo{
+    margin-top: 1%;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%; /* ocupa todo el ancho */
+}
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Merriweather', sans-serif; /* tipografía más estética */
+    color: #1c252e;                /* tono gris-azulado elegante */
+    letter-spacing: 2px;           /* separa un poco las letras */
+    /*text-transform: uppercase;      pone todo en mayúsculas */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* sombra suave */
+    /* border-bottom: 3px solid #3498db; /* línea decorativa debajo */
+    display: inline-block;         /* la línea se ajusta al texto */
+}
+
+h2{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Merriweather', sans-serif; /* tipografía más estética */
+    color: #1c252e;                /* tono gris-azulado elegante */
+    letter-spacing: 2px;           /* separa un poco las letras */
+    /*text-transform: uppercase;      pone todo en mayúsculas */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* sombra suave */
+    border-bottom: 3px solid #3498db; /* línea decorativa debajo */
+    display: inline-block;         /* la línea se ajusta al texto */
+}
+
+.LibrosBox {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+
+
+    column-gap: min(10px);
+    row-gap: min(10px);
+
+    grid-auto-flow: row;
+    grid-column-gap: min(10px);
+
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 15px;
+    margin-top:10px;
+}
+
+.Libro {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#proximamente  {
+    grid-column-start: 4;
+    grid-column-end:6;
+    position: relative;
+    height: 18vw;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.PortadaDeLibro {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+
+.NombreCuento {
+    position: absolute;
+    top: 0;  /* parte superior */
+    left: 0;
+    right: 0;
+    background: rgba(209, 104, 104, 0.6);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* === Descripción (abajo de la imagen) === */
+.Descripcion {
+    position: absolute;
+    bottom: 0;  /* parte inferior */
+    left: 0;
+    right: 0;
+    background: rgba(221, 137, 137, 0.6);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 8px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Mostrar ambos al hacer hover */
+.Libro:hover .NombreCuento,
+.Libro:hover .Descripcion {
+    opacity: 1;
+}
+
+
+.TituloLibroEP {
+    position: relative;
+    background: rgba(95, 198, 179, 0.8);
+    padding: 4px 16px;
+
+    color: #052026;
+    border-radius: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.audios {
+    gap: 12px;
+    background: #5fc6b3;
+    color: #052026;
+    padding: 10px 18px;
+    border-radius: 999px;
+    box-shadow: 0 3px 8px rgba(3, 30, 30, 0.08);
+}
+
+
+.textoGeneral {
+    background-color: rgba(221, 241, 237, 0.8);
+    color: rgba(0, 0, 0);
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto; /* centrado con espacio */
+    text-align: justify;
+    font-size: 25px; /* 🔎 tamaño grande */
+    line-height: 1.3; /* mejor legibilidad */
+    font-family:    "Poppins", sans-serif;
+}
+
+.bodyEnCuentos {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* 🔹 Mantiene el fondo fijo */
+    background-color: #d8f4f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#footerEnPPL{
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Merriweather', sans-serif; /* tipografía más estética */
+}
+
+
+.ControlesLectura {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 6px 12px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.ControlesLectura button {
+    background-color: rgba(95, 198, 179, 0.8);
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.ControlesLectura button:hover {
+    background-color: rgba(95, 198, 179, 1);
+}
+
+.ControlesLectura input[type="range"] {
+    cursor: pointer;
+}
+
+/*  Fondo difuminado del modulo */
+.modulo-fondo {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/*  Caja del formulario */
+.modulo-caja {
+    background: #f5fdfb;
+    border-radius: 16px;
+    padding: 25px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.modulo-caja h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.modulo-caja form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modulocaja input, .modulo-caja textarea {
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.modulo-caja button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.modulo-caja button[type="submit"] {
+    background-color: #3cb371;
+    color: white;
+}
+
+.modulo-caja button#cerrarmodulo {
+    background-color: #aaa;
+    color: white;
+}
+
+.BotonRegistrarse {
+    background-color: rgba(221, 241, 237, 0.6);
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.BotonRegistrarse:hover {
+    background-color: rgba(221, 241, 237, 0.9);
+}
