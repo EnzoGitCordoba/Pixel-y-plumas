@@ -1,5 +1,5 @@
 // poner : npm run start          en la terminal para inicializar server
-
+// https://www.youtube.com/watch?v=KwLTb7If0d4 video
 const express = require ('express');
 
 const app= express();
@@ -17,4 +17,5 @@ app.get('/', (req, res) => {
 // Iniciar servidor
 app.listen(3000, ()=> {
     console.log("Server started on port 3000");
+
 });
