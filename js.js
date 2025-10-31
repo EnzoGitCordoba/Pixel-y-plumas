@@ -4,22 +4,6 @@ import { cuentos } from "./CuentosCargados.js";  //importo los cuentos
 console.log(cuentos);  //con esto puedo utilizarlos
 
 
-// server.js (CommonJS)
-const { createServer } = require('node:http');
-
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello World\n');
-});
-
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}/`);
-});
-
 function agregarLibro(){
     const cont = document.getElementById("cuentos");   //  busca en el HTML un elemento que tenga el atributo id="cuentos" y lo guarda en la variable cont.
     cont.innerHTML = ""; // limpiar antes es decir, borrando borro lo que tenia el contenedor
