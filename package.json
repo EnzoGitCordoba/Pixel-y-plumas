@@ -1,27 +1,16 @@
 {
-  "name": "pixel-y-plumas",
+  "name": "archivos",
   "version": "1.0.0",
   "description": "Pagina web destinada principalmente a cuentos infantiles",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-"start": "nodemon archivos/app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/EnzoGitCordoba/Pixel-y-plumas.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/EnzoGitCordoba/Pixel-y-plumas/issues"
-  },
-  "homepage": "https://github.com/EnzoGitCordoba/Pixel-y-plumas#readme",
   "dependencies": {
     "express": "^5.1.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.10"
   }
 }
