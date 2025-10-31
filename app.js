@@ -1,4 +1,7 @@
-// poner : npm run start          en la terminal para inicializar server
+// Para que el server se actualice solo descargar npm i nodemon -D
+// ir a package.json  , y modificarla parte de scripts quedando --> "scripts" :{ "start" : "nodemon app.js" }
+// luego en terminal inicializamos el sv asi: npm run start
+// En caso de no actualizar json  :  node app.js en terminal cada vez que hagamos un cambio
 // https://www.youtube.com/watch?v=KwLTb7If0d4 video
 const express = require ('express');
 const path = require('path');
@@ -14,7 +17,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + "/index.html"));
 
 })
-// Iniciar servidor
-app.listen(3000, ()=> {
-    console.log("Server started on port 3000");
+
+app.listen(3000, '0.0.0.0', () => {
+    console.log("Servidor accesible desde tu red local en el puerto 3000");
 });
