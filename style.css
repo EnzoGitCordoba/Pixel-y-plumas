@@ -16,18 +16,15 @@ background-size: cover;
 
 
 .headerEnCuento {
-    outline: 3px solid rgba(95, 198, 179, 0.08);
-    position: sticky;
-    width: 100%;
-    top: 0; left: 0; right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: rgba(95, 198, 179, 0.8);
-    padding: 0;
-    margin: 0;
-    z-index: 10;
     border-bottom: 3px solid black;
+    padding: 8px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .CategoriasBox{
@@ -35,36 +32,57 @@ background-size: cover;
     padding-right: 10px;
 }
 
-
-
-
-.LogoConNombre{
-    display: inline-flex;           /* En lugar de flex para limitar el ancho al contenido */
+.LogoConNombre {
+    display: flex;
     align-items: center;
     text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    padding: 0 8px;                 /* opcional: pequeño margen interno */
+    color: black;
 }
 
-
 #LogoPyp {
-    width: 90px;           /* más controlado que max-width: 5% */
+    width: 90px;
     height: auto;
     margin-right: 10px;
     margin-left: 5px;
 }
-
 #Pyp{
     font-size: 1.2rem;
     margin: 0;
+}
+
+
+.botonesHeader {
+    display: flex;
+    gap: 10px;
+}
+
+.BotonRegistrarse {
+    border: 1px solid black;
+    background: transparent;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.BotonRegistrarse:hover {
+    background: black;
+    color: white;
+}
+
+
+#Usuario {
+    margin-right: 70px;
+    text-align: center;
+    font-size: 1.1rem;
 }
 #Eslogan {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 #Titulo{
