@@ -3,6 +3,8 @@
 // luego en terminal inicializamos el sv asi: npm run start
 // En caso de no actualizar json  :  node app.js en terminal cada vez que hagamos un cambio
 // https://www.youtube.com/watch?v=KwLTb7If0d4 video
+// primero debemos inicializar el servidor con node app.js y luego con ngrok ya descargado(npm install -g ngrok) ponemos "ngrok http 3000"
+
 const express = require ('express');
 const path = require('path');
 const app= express();
