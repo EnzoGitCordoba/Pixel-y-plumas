@@ -4,7 +4,7 @@
   "description": "Pagina web destinada principalmente a cuentos infantiles",
   "main": "app.js",
   "scripts": {
-     "start"  : "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +15,13 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnzoGitCordoba/Pixel-y-plumas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EnzoGitCordoba/Pixel-y-plumas/issues"
+  },
+  "homepage": "https://github.com/EnzoGitCordoba/Pixel-y-plumas#readme"
 }
