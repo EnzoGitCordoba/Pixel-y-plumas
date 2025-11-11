@@ -1,5 +1,5 @@
 export const cuentos = [
-    {img:"imagenes/cuentosEnPaginaPPAL/BlancaNievesYlos7enanitos.png", nombre: "Blancanieves y los 7 enanitos",
+    {id:"1", img:"imagenes/cuentosEnPaginaPPAL/BlancaNievesYlos7enanitos.png", nombre: "Blancanieves y los 7 enanitos",
         descripcion:"👑 Una princesa valiente, siete amiguitos y una manzana envenada",
         imagenDelcuento:"imagenes/FondoCuentos/FBN.jpg", textoDelCuento:`
                 Había una vez una niña muy bonita, una pequeña princesa que tenía un cutis blanco como
@@ -72,7 +72,9 @@ export const cuentos = [
                 sentó. Hubo gran regocijo, y los enanitos bailaron alegres mientras Blancanieves aceptaba
                 ir al palacio y casarse con el príncipe.`, audioDelCuento:"Audios/abn.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/CaperucitaRoja.png", nombre: "Caperucita Roja",
+
+
+    {id:"2", img:"imagenes/cuentosEnPaginaPPAL/CaperucitaRoja.png", nombre: "Caperucita Roja",
         descripcion:"🌲 Una niña con capa roja y un lobo astuto en un bosque lleno de sorpresas.",
         imagenDelcuento:"imagenes/FondoCuentos/FCR.jpg", textoDelCuento:`
         Érase una vez una niñita que lucía una hermosa capa de color rojo. Como la niña la usaba muy a menudo, todos la
@@ -147,7 +149,10 @@ export const cuentos = [
         <br/>
         “Nunca debes hablar con extraños”.`, audioDelCuento:"Audios/acr.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/Cenicienta.png", nombre: "Cenicienta",
+
+
+
+    {id:"3", img:"imagenes/cuentosEnPaginaPPAL/Cenicienta.png", nombre: "Cenicienta",
         descripcion:"✨ Una joven con un zapato de cristal que le cambiará su vida para siempre.",
         imagenDelcuento:"imagenes/FondoCuentos/FC.jpg", textoDelCuento:`Cuenta una vieja historia que en un bello país había un rico comerciante que tenía una bella hija llamada
         Cenicienta.
@@ -239,7 +244,10 @@ export const cuentos = [
         La chica pudo probarse su zapatilla y casarse con el príncipe, con lo que puso punto final a todo su infortunio
         y ganó la felicidad total para toda su vida.`, audioDelCuento:"Audios/acen.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/ElGatoConBotas.png", nombre: "El gato con botas",
+
+
+
+    {id:"4", img:"imagenes/cuentosEnPaginaPPAL/ElGatoConBotas.png", nombre: "El gato con botas",
         descripcion:"🐾 Un gato ingenioso con botas mágicas que puede convertir la suerte en aventuras.",
         imagenDelcuento:"imagenes/FondoCuentos/FondoGB.png", textoDelCuento:`  Érase una vez un molinero muy pobre que dejó a sus tres hijos por herencia un molino, un asno y un gato. En el
         reparto, el molino fue para el hijo mayor, el asno para el segundo y el gato para el más joven. Éste último se
@@ -335,7 +343,11 @@ export const cuentos = [
         Aquel joven que antes fue pobre se había convertido en un príncipe gracias a la astucia de un gato. El joven
         nunca olvidó los favores del gato con botas y lo recompensó con una capa, un sombrero y un par de botas nuevas.`, audioDelCuento:"Audios/agcb.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/ElPatitoFeo.png", nombre: "El patito feo",
+
+
+
+
+    {id:"5", img:"imagenes/cuentosEnPaginaPPAL/ElPatitoFeo.png", nombre: "El patito feo",
         descripcion:"🦢 Un pequeño patito que descubre lo especial que es al crecer.",
         imagenDelcuento:"imagenes/FondoCuentos/FondoPF.png", textoDelCuento:`  En la granja había un gran alboroto: los polluelos de Mamá Pata estaban rompiendo el cascarón.
         <br/>
@@ -367,7 +379,12 @@ export const cuentos = [
         veía tan diferente a sus hermanos y hermanas. ¡Ellos eran patitos, pero él era un cisne! Feliz, nadó hacia su
         familia.`, audioDelCuento:"Audios/apf.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/LaBellaDurmiente.png", nombre: "La bella durmiente",
+
+
+
+
+
+    {id:"6", img:"imagenes/cuentosEnPaginaPPAL/LaBellaDurmiente.png", nombre: "La bella durmiente",
         descripcion:"🌹 Una princesa encantada que duerme hasta que el verdadero amor la despierte.",
         imagenDelcuento:"imagenes/FondoCuentos/FondoBD.png", textoDelCuento:`Érase una vez un rey y una reina que vivían muy felices, pero anhelaban tener hijos. Después de muchos años de
         espera, la reina dio a luz a una hermosa niña y todo el reino los acompañó en su felicidad. Hubo una gran
@@ -428,7 +445,12 @@ export const cuentos = [
         <br/>
         El príncipe y la princesa se casaron y vivieron felices por siempre.`, audioDelCuento:"Audios/abd.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/LosTresChanchitos.png", nombre: "Los tres chanchitos",
+
+
+
+
+
+    {id:"7", img:"imagenes/cuentosEnPaginaPPAL/LosTresChanchitos.png", nombre: "Los tres chanchitos",
         descripcion:"🏠 Tres hermanos chanchitos construyen sus casitas para enfrentarse al gran lobo feroz.",
         imagenDelcuento:"imagenes/FondoCuentos/FL3C.jpg", textoDelCuento:`
     Tiempo atrás, en el corazón del bosque,vivían tres cerditos que eran hermanos. El
@@ -468,7 +490,12 @@ export const cuentos = [
     que se oyeron en todo el bosque. Se cuenta
     que nunca jamás quiso comer cerdito.`, audioDelCuento:"Audios/al3c.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/HanselyGretel.png", nombre: "Hansel y Gretel",
+
+
+
+
+
+    {id:"8", img:"imagenes/cuentosEnPaginaPPAL/HanselyGretel.png", nombre: "Hansel y Gretel",
         descripcion:"Dos hermanos son abandonados en el bosque y encuentran una casa hecha de dulces, donde una bruja los captura. ¿Logran escapar?",
         imagenDelcuento:"imagenes/FondoCuentos/FHYG.jpg", textoDelCuento:`  Un humilde leñador vivía con sus dos hijos y su nueva esposa en un bosque a las afueras del pueblo. El niño se llamaba Hansel y la niña, Gretel. Todos los días el leñador trabajaba sin descanso. Sin embargo, llegó un momento en el que no le alcanzaba para el sustento de su familia. Preocupado, el leñador le dijo a su esposa una noche:
 <br>
@@ -542,7 +569,12 @@ export const cuentos = [
     <br>
     Fue así que esta pequeña familia vivió feliz para siempre.`, audioDelCuento:"Audios/ahyg.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/Rapunzel.png", nombre: "Rapunzel",
+
+
+
+
+
+    {id:"9", img:"imagenes/cuentosEnPaginaPPAL/Rapunzel.png", nombre: "Rapunzel",
         descripcion:"Una joven encerrada por una bruja en lo alto de una torre deja caer su cabello para que un príncipe suba a rescatarla.",
         imagenDelcuento:"imagenes/FondoCuentos/FR.jpg", textoDelCuento:` Había una vez una pareja que por mucho tiempo deseaba tener un bebé, hasta que por fin ese deseo se hizo realidad. A través de la ventana trasera de la pequeña casa donde vivían, podían ver un espléndido jardín que estaba lleno de las más bellas plantas y las más suculentas frutas y vegetales. El jardín estaba rodeado por un alto muro, y nadie se atrevía a entrar a él, porque pertenecía a una bruja muy malvada.
 <br>
@@ -605,7 +637,12 @@ export const cuentos = [
     Durante muchos años, vagó por el bosque hasta que tropezó con un hermoso lago. Allí escuchó un canto que reconoció al instante… ¡era la voz de su queria Rapunzel! Cuando Rapunzel
     vio al príncipe, se abalanzó sobre él llorando. Sus lágrimas se posaron sobre los ojos del príncipe y pudo él volver a ver. Rapunzel y el príncipe se casaron y fueron felices para siempre.`, audioDelCuento:"Audios/AR.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/Lasirenita.png", nombre: "La sirenita",
+
+
+
+
+
+    {id:"10", img:"imagenes/cuentosEnPaginaPPAL/Lasirenita.png", nombre: "La sirenita",
         descripcion:"Una sirena anhela convertirse en humana para estar con el príncipe que ama, sacrificando su voz",
         imagenDelcuento:"imagenes/FondoCuentos/FLS.jpg", textoDelCuento:`  En medio del mar, en las más grandes profundidades, se extendía un reino mágico, el reino del pueblo del mar. Un lugar de extraordinaria belleza rodeado por flores y plantas únicas y en el que se encontraba el castillo del rey del mar.
 <br>
@@ -645,7 +682,13 @@ export const cuentos = [
     <br>
     Mientras las escuchaba vio cómo el príncipe la buscaba en el barco, y en la distancia permaneció contemplándolo mientras una lágrima, la primera de toda su vida, comenzó a brotar por su mejilla.`, audioDelCuento:"Audios/ALS.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/Laprincesayelguisante.png", nombre: "La princesa y el guisante",
+
+
+
+
+
+
+    {id:"11", img:"imagenes/cuentosEnPaginaPPAL/Laprincesayelguisante.png", nombre: "La princesa y el guisante",
         descripcion:"Una princesa es puesta a prueba colocando un guisante bajo 20 colchones. Solo una verdadera princesa puede sentirlo.",
         imagenDelcuento:"imagenes/FondoCuentos/FLPYE.jpg", textoDelCuento:`  Había una vez un príncipe que quería casarse con una princesa, pero tenía que ser una princesa genuina. Para encontrar a esta princesa, viajó por todo el mundo, pero en ningún lugar podía encontrarla. Princesas había por montones, pero el príncipe no podía estar seguro de que fueran princesas reales; siempre descubría algo en ellas que le disgustaba.
 <br>
@@ -671,7 +714,12 @@ export const cuentos = [
     <br>
     ¡Y esta sí es una historia verdadera!`, audioDelCuento:"Audios/ALPYE.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/ElFlautistaDeHamelín.jpeg", nombre: "El flautista de Hamelín",
+
+
+
+
+
+    {id:"12", img:"imagenes/cuentosEnPaginaPPAL/ElFlautistaDeHamelín.jpeg", nombre: "El flautista de Hamelín",
         descripcion:"Un misterioso flautista libera una ciudad de ratas con su música, pero al no recibir pago, se lleva a los niños.",
         imagenDelcuento:"imagenes/FondoCuentos/FEFDH.jpg", textoDelCuento:` A las orillas de un río al norte de Alemania, reposa una ciudad de paisajes pintorescos llamada Hamelín.
 <br>
@@ -711,7 +759,12 @@ export const cuentos = [
     <br>
     El extraño salió de la ciudad, pasó por el río y desapareció en la espesura del bosque… todos los niños lo siguieron.`, audioDelCuento:"Audios/AEFDH.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/Lacigarraylahormiga.jpeg", nombre: "La cigarra y la hormiga",
+
+
+
+
+
+    {id:"13", img:"imagenes/cuentosEnPaginaPPAL/Lacigarraylahormiga.jpeg", nombre: "La cigarra y la hormiga",
         descripcion:"Una hormiga previsora trabaja mientras la cigarra canta todo el verano. En invierno, la cigarra sufre por no haber guardado alimento.",
         imagenDelcuento:"imagenes/FondoCuentos/FLCYLH.jpg", textoDelCuento:`  Durante todo un verano, una cigarra se dedicó a cantar y a jugar sin preocuparse por nada. Un día, vio pasar a una hormiga con un enorme grano de trigo para almacenarlo en su hormiguero.
     <br>
@@ -739,7 +792,11 @@ export const cuentos = [
     <br>
     La cigarra aprendió a no burlarse de los demás y a trabajar con disciplina.`, audioDelCuento:"Audios/AEFDH.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/Aladin.jpeg", nombre: "Aladin",
+
+
+
+
+    {id:"14", img:"imagenes/cuentosEnPaginaPPAL/Aladin.jpeg", nombre: "Aladin",
         descripcion:"Un joven humilde encuentra una lámpara que contiene a un genio capaz de conceder deseos, cambiando su destino.",
         imagenDelcuento:"imagenes/FondoCuentos/FA.jpg", textoDelCuento:`  Lejos muy lejos, en una ciudad de China, un joven llamado Aladino se pasaba todo el día jugando con sus amigos. Su padre, un humilde sastre, trató de enseñarle el valor del trabajo, pero Aladino se negó a ayudarlo. Incluso después de la pérdida de su padre, Aladino prefería estar en la calle vagando que ayudar a su madre a ganarse el sustento.
 <br>
@@ -831,7 +888,12 @@ export const cuentos = [
     <br>
     Antes de un abrir y cerrar de ojos, Aladino y su princesa estaban en China, nuevamente en el palacio. Y allí vivieron felices durante muchos, muchos, años.`, audioDelCuento:"Audios/AA.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/labellaylabestia.jpeg", nombre: "La bella y la bestia",
+
+
+
+
+
+    {id:"15", img:"imagenes/cuentosEnPaginaPPAL/labellaylabestia.jpeg", nombre: "La bella y la bestia",
         descripcion:"Una joven llamada Bella se ofrece a vivir en un castillo con una Bestia para salvar a su padre.",
         imagenDelcuento:"imagenes/FondoCuentos/FLBYLB.jpg", textoDelCuento:`  Érase una vez un mercader que había perdido su enorme fortuna. Un día, debió viajar a un lugar muy lejano y les preguntó a sus hijas qué querían a su regreso. Sus dos hijas mayores pidieron joyas y vestidos, sin considerar la situación de su padre. Pero la hija menor, a quien todos llamaban Bella, dijo:
 <br>
@@ -887,7 +949,12 @@ export const cuentos = [
     <br>
     La bella y la bestia se casaron y vivieron felices para siempre.`, audioDelCuento:"Audios/ALBYLB.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/Ellibrodelaselva.png", nombre: "El libro de la selva",
+
+
+
+
+
+    {id:"16", img:"imagenes/cuentosEnPaginaPPAL/Ellibrodelaselva.png", nombre: "El libro de la selva",
         descripcion:"Un niño criado por lobos en la selva. Guiado por sus amigos Baloo y Bagheera, debera aprender las leyes de la selva",
         imagenDelcuento:"imagenes/FondoCuentos/FELDLS.jpg", textoDelCuento:`  Como cada tarde la pantera Bagheera fue al río a saciar su sed, pero ese día estaba destinado a que pasase algo distinto, que cambiaría su rutina.
 <br>
@@ -941,7 +1008,12 @@ export const cuentos = [
     <br>
     Baloo quedó entristecido pero al igual que Bagheera comprendía que el hijo de la jungla estaba donde le correspondía, entre hombres, aunque en la selva siempre tendría fieles y adorables amigos.`, audioDelCuento:"Audios/AELDLS.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/PeterPan.png", nombre: "Peter Pan",
+
+
+
+
+
+    {id:"17", img:"imagenes/cuentosEnPaginaPPAL/PeterPan.png", nombre: "Peter Pan",
         descripcion:"Un niño que se niega a crecer y vive en la isla de Nunca Jamás...",
         imagenDelcuento:"imagenes/FondoCuentos/FPP.jpg", textoDelCuento:`  Hace mucho tiempo vivió, en la ciudad de Londres, una jovencita llamada Wendy, que siempre estaba contando cuentos maravillosos a sus hermanos John y Michael.
 <br>
@@ -1058,7 +1130,14 @@ export const cuentos = [
     <br>
     FIN`, audioDelCuento:"Audios/APP.mp3"},
 
-    {img:"imagenes/cuentosEnPaginaPPAL/ElCascanueces.png", nombre: "El Cascanueces",
+
+
+
+
+
+
+
+    {id:"18", img:"imagenes/cuentosEnPaginaPPAL/ElCascanueces.png", nombre: "El Cascanueces",
         descripcion:"Una niña recibe un Cascanueces de madera por Navidad, que cobra vida mágicamente",
         imagenDelcuento:"imagenes/FondoCuentos/FECN.jpg", textoDelCuento:` El médico Stahlbaum, su esposa y sus hijos, se encontraban celebrando la víspera de Navidad. La nieve que caía se podía ver a través de la ventana, y los dos niños, llamados Clara y Fritz, no podían esperar a que fuera el día siguiente para así poder abrir todos los regalos que se encontraban debajo del árbol.
 <br>

@@ -13,10 +13,13 @@ app.use(express.static(__dirname));//  Servir archivos estáticos (CSS, JS, imá
 
 // Ruta principal
 app.get('/', (req, res) => {
-    //res.send('Hello World!');
     res.sendFile(path.join(__dirname + "/index.html"));
 
 })
+
+// get - post - put- patch - delete
+// uso de fetch  (asincrono)
+
 
 app.listen(3000, '0.0.0.0', () => {
     console.log("Servidor accesible desde tu red local en el puerto 3000");
