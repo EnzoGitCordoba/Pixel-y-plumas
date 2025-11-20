@@ -1,0 +1,72 @@
+[
+  {
+    "email": "enzo.sanmiguel@est.fi.uncoma.com.ar",
+    "nombre": "facundo",
+    "password": "1234"
+  },
+  {
+    "email": "enzosmcordoba@gmail.com",
+    "nombre": "enzo",
+    "password": "1234"
+  },
+  {
+    "email": "cufadiego10@hotmail.com",
+    "nombre": "facundo",
+    "password": "12345"
+  },
+  {
+    "email": "enzo.sanmiguel@est.fi.uncoma.com.ar",
+    "nombre": "facundo",
+    "password": "123"
+  },
+  {
+    "email": "a@a",
+    "nombre": "a",
+    "password": "1"
+  },
+  {
+    "nombre": "Enzo",
+    "mail": "enzo@test.com",
+    "clave": "123456"
+  },
+  {
+    "nombre": "Enzoooooooooooooooooooooooooo",
+    "mail": "enzo@test.com",
+    "clave": "123456"
+  },
+  {
+    "nombre": "aaaaaaaaa",
+    "mail": "aaaaa@aa",
+    "clave": "aaaaaaaaaaaaaa"
+  },
+  {
+    "nombre": "bb",
+    "mail": "bbbb@b",
+    "clave": "bbb"
+  },
+  {
+    "nombre": "c",
+    "mail": "ccc@c",
+    "clave": "c"
+  },
+  {
+    "nombre": "dd",
+    "mail": "ddd@d",
+    "clave": "d"
+  },
+  {
+    "nombre": "c",
+    "mail": "c@c",
+    "clave": "c"
+  },
+  {
+    "nombre": "k",
+    "mail": "k@k",
+    "clave": "k"
+  },
+  {
+    "nombre": "eeeeeeeeee",
+    "mail": "rodee2@gmail.com",
+    "clave": "eeeeeeeeee"
+  }
+]
