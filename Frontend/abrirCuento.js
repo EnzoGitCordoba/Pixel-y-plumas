@@ -17,6 +17,10 @@ fetch("/api/cuentos") // Usamos fetch() para pedir el archivo Cuentos.json al se
 
 export function mostrarCuento(index) {
     const cuento = cuentos[index];
+    const cont2 = document.getElementById("mascuentos");
+    cont2.innerHTML = "";
+
+
     const contenedor = document.getElementById("cuentos");
     contenedor.style.display = "flex";
     contenedor.style.flexDirection = "column";
@@ -57,3 +61,6 @@ export function mostrarCuento(index) {
     };
 }
 window.mostrarCuento=mostrarCuento;
+// al separar los archivos y uso onclick="..." en HTML directamente, el navegador busca esa función en el scope global (window).
+//en caso de no querer esto deberia hacer el onclick con
+// document.querySelector("#miImagen").onclick = () => { mostrarCuento(3); }; sin que el html carle abrirCuentos.js y exportando e importando la funcion
