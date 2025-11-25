@@ -61,6 +61,6 @@ export function mostrarCuento(index) {
     };
 }
 window.mostrarCuento=mostrarCuento;
-// al separar los archivos y uso onclick="..." en HTML directamente, el navegador busca esa función en el scope global (window).
+// al separar los archivos y uso onclick="..." en HTML directamente, el navegador busca esa función en el la variable  global (window).
 //en caso de no querer esto deberia hacer el onclick con
 // document.querySelector("#miImagen").onclick = () => { mostrarCuento(3); }; sin que el html carle abrirCuentos.js y exportando e importando la funcion

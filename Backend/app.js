@@ -36,21 +36,69 @@ app.get('/api/VistaPPAL', (req, res) => {
 app.get('/api/cuentos/:id', (req, res) => {
     const id = req.params.id;
     const cuento = cuentos.find(c => c.id === id);
-    if (!cuento) {
-        return res.status(404).json({ error: "Cuento no encontrado" });
+    if (isNaN(id)) {
+        return res.status(400).json({
+            error: "Los parámetros deben ser números"
+        });
+    }else {
+        if (!cuento) {
+            return res.status(404).json({ error: "Cuento no encontrado" });
+        }
+        res.json(cuento);
     }
-    res.json(cuento);
 });
+
+
 // GET vistappal por id
 app.get('/api/vistaPPAL/:id', (req, res) => {
     const id = req.params.id;
     const VistaPPAL = vista.find(c => c.id === id);
 
-    if (!VistaPPAL) {
-        return res.status(404).json({ error: "Cuento no encontrado" });
+
+    if (isNaN(id)) {
+        return res.status(400).json({
+            error: "Los parámetros deben ser números"
+        });
+    }else{
+
+        if (!VistaPPAL) {
+            return res.status(404).json({ error: "Cuento no encontrado" });
+        }
+
+        res.json(VistaPPAL);
+
     }
 
-    res.json(VistaPPAL);
+});
+
+app.get('/api/vistaPPAL/caracteristicas/:cantidad/:from', (req, res) => {
+    let cant = Number(req.params.cantidad);
+    let idInicial = Number(req.params.from);
+
+    if (isNaN(cant) || isNaN(idInicial)) {
+        return res.status(400).json({
+            error: "Los parámetros deben ser números"
+        });
+    }else{
+        let contenido = [];
+
+        for (let i = 0; i < cant; i++) {
+            let idActual = idInicial + i;
+
+            const VistaPPAL = vista.find(c => c.id === String(idActual));
+
+            if (VistaPPAL) {
+                contenido[i] = VistaPPAL;
+            } else {
+                contenido[i] = "error: Cuento con id:" + idActual + " no encontrado";
+            }
+        }
+
+        res.json(contenido);
+
+
+    }
+
 });
 
 //--------------------------------------METODOS POST----------------------------------------------
