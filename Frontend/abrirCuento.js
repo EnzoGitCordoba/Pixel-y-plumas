@@ -12,14 +12,13 @@ fetch("/api/cuentos") // Usamos fetch() para pedir el archivo Cuentos.json al se
     })
     // Si ocurre cualquier error al cargar o leer el JSON, se ejecuta este catch.
     .catch(err => console.error("Error cargando el JSON:", err));
+
+
 // Función que se encarga de mostrar todos los cuentos en la página
-
-
 export function mostrarCuento(index) {
     const cuento = cuentos[index];
     const cont2 = document.getElementById("mascuentos");
     cont2.innerHTML = "";
-
 
     const contenedor = document.getElementById("cuentos");
     contenedor.style.display = "flex";
@@ -33,7 +32,8 @@ export function mostrarCuento(index) {
         <div class="ControlesLectura">
             <button id="btnAumentar">Letra+</button>
             <button id="btnReducir">Letra-</button>
-            <input id="rangoOpacidad" type="range" min="0.3" max="1" step="0.1" value="0.8">Opacidad</input>
+            <input id="rangoOpacidad" type="range" min="0.3" max="1" step="0.1" value="0.8">
+            Opacidad
         </div>
         <p class="textoGeneral">${cuento.textoDelCuento}</p>
     </div>
@@ -60,7 +60,3 @@ export function mostrarCuento(index) {
         texto.style.backgroundColor = `rgba(221, 241, 237, ${rangoOpacidad.value})`;
     };
 }
-window.mostrarCuento=mostrarCuento;
-// al separar los archivos y uso onclick="..." en HTML directamente, el navegador busca esa función en el la variable  global (window).
-//en caso de no querer esto deberia hacer el onclick con
-// document.querySelector("#miImagen").onclick = () => { mostrarCuento(3); }; sin que el html carle abrirCuentos.js y exportando e importando la funcion

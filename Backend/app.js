@@ -6,12 +6,12 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-app.use(express.static(path.join(__dirname, '../Frontend'))); // Servir la carpeta Frontend
+app.use(express.static(path.join(__dirname, '../Frontend'))); // Carga la carpeta Frontend
 app.use(express.json());
 app.use(express.text());
 const fs = require("fs");
 
-// JSONs en Backend/data
+// guardamos los datos que se encuentran dentro de los json
 const cuentos = require(path.join(__dirname, 'data', 'Cuentos.json'));
 const vista = require(path.join(__dirname, 'data', 'VistaPPAL.json'));
 const usuarios = require(path.join(__dirname, 'data', 'usuarios.json'));

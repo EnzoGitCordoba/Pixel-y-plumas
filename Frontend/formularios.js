@@ -1,10 +1,5 @@
-window.mostrarFormulario = mostrarFormulario;
-window.abrirRegistro = abrirRegistro;
-window.abrirInicioSesion = abrirInicioSesion;
-
-
 // --------------------------------FORMULARIO RECOMENDAR CUENTO---------------------------------------------------------------
-function mostrarFormulario() {
+export function mostrarFormulario() {
     const usuarioStr = localStorage.getItem("usuarioActual");
     if (usuarioStr) {
         const usuario = JSON.parse(usuarioStr);
@@ -51,7 +46,7 @@ function mostrarFormulario() {
 }
 
 // --------------------------------FORMULARIO REGISTRO--------------------------------------------------------------
-function abrirRegistro() {
+export function abrirRegistro() {
     const modulo = document.createElement("div");
     modulo.id = "moduloFormulario";
     modulo.innerHTML = `
@@ -98,7 +93,7 @@ function abrirRegistro() {
 }
 
 // --------------------------------ABRIR INICIO SESION  --------------------------------------------------------------
-function abrirInicioSesion() {
+export function abrirInicioSesion() {
     const modulo = document.createElement("div");
     modulo.id = "moduloFormulario";
     modulo.innerHTML = `
@@ -119,8 +114,17 @@ function abrirInicioSesion() {
 
     document.getElementById("formLogin").onsubmit = async (e) => {
         e.preventDefault();
-        const loginData = { email: document.getElementById("emailLogin").value, password: document.getElementById("passwordLogin").value };
-        const res = await fetch('/api/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(loginData) });
+        const loginData = {
+            email: document.getElementById("emailLogin").value,
+            password: document.getElementById("passwordLogin").value
+        };
+
+        const res = await fetch('/api/login', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(loginData)
+        });
+
         const data = await res.json();
         if (data.ok) {
             alert(`¡Bienvenido de nuevo, ${data.nombreUs}!`);
@@ -134,7 +138,7 @@ function abrirInicioSesion() {
 }
 
 // --------------------------------ACTUALIZACION DE INTERFAZ --------------------------------------------------------------
-function actualizarInterfazUsuario() {
+export function actualizarInterfazUsuario() {
     const contenedor = asegurarContenedorBotones();
     const usuario = JSON.parse(localStorage.getItem("usuarioActual"));
     if (usuario) {
@@ -151,7 +155,11 @@ document.addEventListener("DOMContentLoaded", actualizarInterfazUsuario);
 
 function asegurarContenedorBotones() {
     let cont = document.getElementById('botonesUsuario');
-    if (!cont) { cont = document.createElement('div'); cont.id = 'botonesUsuario'; document.body.prepend(cont); }
+    if (!cont) {
+        cont = document.createElement('div');
+        cont.id = 'botonesUsuario';
+        document.body.prepend(cont);
+    }
     return cont;
 }
 
@@ -160,3 +168,11 @@ async function cerrarSesion() {
     actualizarInterfazUsuario();
     alert(" Sesión cerrada ");
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const btnIniciar = document.querySelector('[onclick="abrirInicioSesion()"]');
+    if (btnIniciar) btnIniciar.onclick = abrirInicioSesion;
+
+    const btnRegistrar = document.querySelector('[onclick="abrirRegistro()"]');
+    if (btnRegistrar) btnRegistrar.onclick = abrirRegistro;
+});
