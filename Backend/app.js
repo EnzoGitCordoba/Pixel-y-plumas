@@ -71,35 +71,29 @@ app.get('/api/vistaPPAL/:id', (req, res) => {
 
 });
 
-app.get('/api/vistaPPAL/caracteristicas/:cantidad/:from', (req, res) => {
-    let cant = Number(req.params.cantidad);
-    let idInicial = Number(req.params.from);
+app.get('/api/vistaPPAL/caracteristicas', (req, res) => {
+    let cant = parseInt(req.query.cantidad, 10);
+    let idInicial = parseInt(req.query.from, 10);
 
-    if (isNaN(cant) || isNaN(idInicial)) {
-        return res.status(400).json({
-            error: "Los parámetros deben ser números"
-        });
-    }else{
+
         let contenido = [];
 
         for (let i = 0; i < cant; i++) {
             let idActual = idInicial + i;
-
             const VistaPPAL = vista.find(c => c.id === String(idActual));
-
             if (VistaPPAL) {
                 contenido[i] = VistaPPAL;
             } else {
-                contenido[i] = "error: Cuento con id:" + idActual + " no encontrado";
+                contenido[i] = { error: `Cuento con id ${idActual} no encontrado` };
             }
         }
 
-        res.json(contenido);
 
 
-    }
+    res.json(contenido);
 
 });
+
 
 //--------------------------------------METODOS POST----------------------------------------------
 
