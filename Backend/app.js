@@ -71,7 +71,7 @@ app.get('/api/vistaPPAL/:id', (req, res) => {
 
 });
 
-app.get('/api/vistaPPAL/caracteristicas', (req, res) => {
+app.get('/api/caracteristicas', (req, res) => {
     let cant = parseInt(req.query.cantidad, 10);
     let idInicial = parseInt(req.query.from, 10);
 
